@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <form method="POST"> {% csrf_token %} <!--Tambahkan action untuk redirect ke halaman login-->
+    
+    {{form.as_p}}
+
+
+    <input type="Submit", value="Save" />
+
+    </form>
+{% endblock content %}
